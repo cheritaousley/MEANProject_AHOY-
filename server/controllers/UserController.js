@@ -84,7 +84,7 @@ module.exports = (function () {
              { fullname: req.body.fullname,  
                 email: req.body.email }, function (err, user) {
                 if (err) {
-                    console.log(err);
+                    console.log({ Error: 'Cannot be updated!', updatedTo: false });
                 }
                 else {
                     console.log("This user is now updated to:", user);

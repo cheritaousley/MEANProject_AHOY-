@@ -14,11 +14,6 @@ import { LogoutComponent } from './logout/logout.component';
 
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   pathMatch: 'full'
-  //   component: AppComponent,
-  // },
   {
     path: '',
     component: HomeComponent,
@@ -27,12 +22,6 @@ const routes: Routes = [
       {path: 'register', component: RegistrationComponent}
     ]
   },
-  // {
-  //   path: 'createuser',
-  //   pathMatch: 'full',
-  //   component: RegistrationComponent,
-  //   children: [],
-  // },
   {
     path: 'Team',
     pathMatch: 'full',
@@ -44,12 +33,6 @@ const routes: Routes = [
     component: ChatComponent,
     children: [],
   },
-  // {
-  //   path: '**', //this was preventing my form from channel component from displaying
-  //   pathMatch: 'full',
-  //   component: PagenotfoundComponent,
-  //   children: [],
-  // },
   {
     path: 'createchannel',
     pathMatch: 'full',
